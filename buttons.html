@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-vector/pastel-ombre-background-pink-purple_53876-120750.jpg?size=626&ext=jpg') ;
+        }
+        .button{
+            display: block;
+            margin: 36px 0px 32px 13px;
+            border-radius: 30px;
+            height: 86px;
+            width: 200px;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background-image: linear-gradient(to right, rgb(138, 16, 163) ,rgb(191, 56, 191), rgb(228, 177, 242));
+            
+
+            
+        }
+        a{
+            text-decoration: none;
+            letter-spacing: 0.08em;
+            color: rgb(81, 3, 88);
+        }
+        .button:hover{
+            border: 2px solid rgb(0, 0, 0);
+            height: 90px;
+            width: 210px;
+            
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="bt1"><a href="form.html" target="frame3"><span>Login/SignUp</span> </a></button>
+        <button class="button" id="bt2"><a href="shop.html" target="frame3"><span>Our Menu</span> </a></button>
+        <button class="button" id="bt3"><a href="blog.html" target="frame3"><span>Blog</span> </a></button>
+    </div>
+</body>
+</html>
